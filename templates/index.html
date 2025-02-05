@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiTok - Scroll Without Guilt</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="grid"></div>
+    <div class="top-right-links">
+        <a href="https://github.com/divine-architect/wikitok" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/cybereriauser" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    
+    <div id="article-container" class="article-container">
+        <div class="content initial-content">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="WikiTok Logo" class="logo">
+            <h1>WikiTok</h1>
+            <p>Doomscroll without guilt. With every swipe, you get smarter.</p>
+            <p class="scroll-indicator">Start scrolling to discover something new today!</p>
+            <a href="#" class="start-button" id="start-btn">Start Now</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
